@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Press the left button to change the image</h1>
+    <h1>Press the right button to change the image back to the original</h1>
+    <button onclick="leftbutton()">change image</button>
+    <img id="catpicture" src="Screenshot 2024-03-09 214730.jpg" width="100px" height="100px">
+    <button onclick="rightbutton()">change image </button>
+    <script>
+        function leftbutton(){
+            document.getElementById('catpicture').src='Screenshot 2024-03-09 214730.jpg'
+        }
+        function rightbutton(){
+            document.getElementById('catpicture').src='Screenshot 2024-03-09 214803.jpg'
+        }
+    </script>
+</body>
+</html>
